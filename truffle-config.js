@@ -7,7 +7,7 @@ module.exports = {
         }
     },
     contracts_directory: './contracts/',
-    contracts_build_directory: './src/truffle_abis/',
+    contracts_build_directory: './client/src/truffle_abis/',
     compilers: {
         solc: {
             version: "0.8.26",
