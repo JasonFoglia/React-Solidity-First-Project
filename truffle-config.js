@@ -8,8 +8,8 @@ export const networks = {
         network_id: "*"
     }
 };
-export const contracts_directory = './src/contracts/';
-export const contracts_build_directory = './src/truffle_abis/';
+export const contracts_directory = './contracts/';
+export const contracts_build_directory = './truffle_abis/';
 export const compilers = {
     solc: {
         version: "0.8.26",
