@@ -6,7 +6,11 @@ contract Migrations {
     uint public last_completed_migration;
 
     modifier restricted() {
-        if (msg.sender == owner) _;
+        require(
+            msg.sender == owner,
+            "This function is restricted to the contract's owner"
+        );
+        _;
     }
 
     constructor() {
