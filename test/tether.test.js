@@ -1,4 +1,4 @@
-const Tether = require('../contracts/Tether.sol');
+const Tether = artifacts.require('../contracts/Tether.sol');
 
 contract('Tether', (accounts) => {
     it('should return the correct name', async () => {

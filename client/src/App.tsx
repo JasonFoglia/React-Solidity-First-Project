@@ -1,6 +1,5 @@
 import './App.css'
 import Web3 from 'web3';
-import { AbiItem } from 'web3-utils';
 import React from 'react';
 import DecentralBank from './truffle_abis/DecentralBank.json';
 import Tether from './truffle_abis/Tether.json';
@@ -84,7 +83,7 @@ class App extends React.Component<{}, AppState> {
 
     const tetherData = (Tether.networks as TetherType)[networkId];
     if (tetherData) {
-      const tether = new this.web3.eth.Contract(Tether.abi as AbiItem[], tetherData.address);
+      const tether = new this.web3.eth.Contract(Tether.abi as any, tetherData.address);
       this.setState({ tether });
       let tetherBalance = await tether.methods.balanceOf(this.state.account).call();
       this.setState({ tetherBalance: tetherBalance.toString() });
@@ -94,7 +93,7 @@ class App extends React.Component<{}, AppState> {
 
     const jafData = (JAF.networks as TetherType)[networkId];
     if (jafData) {
-      const jaf = new this.web3.eth.Contract(JAF.abi, jafData.address);
+      const jaf = new this.web3.eth.Contract(JAF.abi as any, jafData.address);
       this.setState({ jaf });
       let rewardBalance = await jaf.methods.balanceOf(this.state.account).call();
       this.setState({ rewardBalance: rewardBalance.toString() });
@@ -104,7 +103,7 @@ class App extends React.Component<{}, AppState> {
 
     const decentralBankData = (DecentralBank.networks as TetherType)[networkId];
     if (decentralBankData) {
-      const decentralBank = new this.web3.eth.Contract(DecentralBank.abi, decentralBankData.address);
+      const decentralBank = new this.web3.eth.Contract(DecentralBank.abi as any, decentralBankData.address);
       this.setState({ decentralBank });
       let stakingBalance = await decentralBank.methods.stakingBalance(this.state.account).call();
       this.setState({ stakingBalance: stakingBalance.toString() });

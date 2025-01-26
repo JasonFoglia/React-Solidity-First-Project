@@ -15,6 +15,7 @@ Getting started:
   - cd to location of truffle_config.js
   - `truffle compile`
   - `truffle migrate`
+  - `truffle test`
   
 [Cheat Sheet](SolidityCheatSheet.md)
 
