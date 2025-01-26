@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.8.2 <0.9.0;
+pragma solidity ^0.8.2;
 
 contract JAF {
-    string public name = "UNOJAF";
+    string public name = "JAF";
     string public symbol = "JAF";
     uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
     uint8 public decimals = 18;

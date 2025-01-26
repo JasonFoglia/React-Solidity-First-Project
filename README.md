@@ -1,5 +1,22 @@
 # React + TypeScript + Vite
 
+Getting started:
+
+- Install Truffle: `npm install -g truffle`
+- Install Truffle: `yarn add truffle global`
+- Create a new Truffle project: `truffle init`
+- Create a new React project: `npx create-react-app my-app --template typescript`
+- Install Truffle libraries in your React project: `yarn add @truffle/contract`
+- Write your smart contracts and React components
+- Deploy your contracts and integrate them with your frontend 
+  - `ganache`
+  - cd to location of truffle_config.js
+  - `truffle compile`
+  - `truffle migrate`
+  - 
+
+----
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
