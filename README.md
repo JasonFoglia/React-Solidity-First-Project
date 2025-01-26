@@ -2,9 +2,11 @@
 
 Getting started:
 
-- Install Truffle: `npm install -g truffle`
-- Install Truffle: `yarn add truffle global`
+- Install Truffle **NPM**: `npm install -g truffle`
+- Install Truffle **YARN**: `yarn add truffle global`
 - Create a new Truffle project: `truffle init`
+- In truffle folder: `mkdir client`
+- Nav to client folder where we will create React: `cd client`
 - Create a new React project: `npx create-react-app my-app --template typescript`
 - Install Truffle libraries in your React project: `yarn add @truffle/contract`
 - Write your smart contracts and React components
@@ -13,7 +15,9 @@ Getting started:
   - cd to location of truffle_config.js
   - `truffle compile`
   - `truffle migrate`
-  - 
+  
+[Cheat Sheet](SolidityCheatSheet.md)
+
 
 ----
 
